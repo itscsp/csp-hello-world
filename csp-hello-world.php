@@ -15,21 +15,12 @@ define( 'HWP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 // Autoload or manually include the class
 require_once HWP_PLUGIN_DIR . 'includes/class-hello-world.php';
-// Include the plugin update checker
-require_once HWP_PLUGIN_DIR . 'includes/plugin-update-checker/plugin-update-checker.php';
 
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 // Initialize the plugin
 function hwp_run_plugin() {
     $plugin = new Hello_World_Plugin();
     $plugin->run();
 
-    // Setup the update checker
-    $updateChecker = PucFactory::buildUpdateChecker(
-        'https://github.com/itscsp/csp-hello-world/releases/latest',
-        __FILE__,
-        'csp-hello-world'
-    );
 }
 add_action( 'plugins_loaded', 'hwp_run_plugin' );
