@@ -23,7 +23,7 @@ class Hello_World_Plugin {
 
     public function append_hello_world_message( $content ) {
         if ( is_singular( 'post' ) && in_the_loop() && is_main_query() ) {
-            $message = '<p class="hwp-hello">Thanks for reading! 🙌</p>';
+            $message = '<p class="hwp-hello">Thanks for reading! Updated 🙌</p>';
             return $content . $message;
         }
         return $content;
