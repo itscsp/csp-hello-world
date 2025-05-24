@@ -3,7 +3,7 @@ name: Sync Version from Manifest
 on:
   push:
     branches:
-      - Master
+      - main
     paths:
       - 'manifest.json'
 

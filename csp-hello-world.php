@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: CSP Hello World
- * Description: A simple OOP-based Hello World WordPress plugin.
+ * Description: A simple OOP-based Hello World WordPress plugin updated.
  * Version: 1.0.0
  * Author: Chethan S Poojary
  * Text Domain: csp-world-plugin
