@@ -2,9 +2,9 @@
 /**
  * Plugin Name: CSP Hello World
  * Description: A simple OOP-based Hello World WordPress plugin.
- * Version: 1.0
+ * Version: 1.0.0
  * Author: Chethan S Poojary
- * Text Domain: hello-world-plugin
+ * Text Domain: csp-world-plugin
  */
 
 defined( 'ABSPATH' ) || exit;
